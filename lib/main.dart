@@ -50,7 +50,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage>
     with AfterLayoutMixin, SingleTickerProviderStateMixin {
-  static const int THRESHOLD = 15000;
+  static const int THRESHOLD = 10000; 
 
   bool temp;
   bool isHomePage = true;
@@ -521,7 +521,7 @@ class _HomePageState extends State<HomePage>
           }
         } else
           tempMinusOne = true;
-        print('^^^^^^^^^^^^^^^^^$times');
+        print('^^^^^^^^^^^^^^^^^$k');
         if (times > 0)
           buildFuture();
         else {
